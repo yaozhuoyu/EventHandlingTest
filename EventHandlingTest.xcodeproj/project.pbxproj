@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5BE7DAC318C4EA13002797F9 /* TouchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BE7DAC218C4EA13002797F9 /* TouchView.m */; };
+		5BE7DAC918C4EB16002797F9 /* TouchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BE7DAC818C4EB16002797F9 /* TouchViewController.m */; };
 		5BF35AEE18C4B2EC00A02D22 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF35AED18C4B2EC00A02D22 /* Foundation.framework */; };
 		5BF35AF018C4B2EC00A02D22 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF35AEF18C4B2EC00A02D22 /* CoreGraphics.framework */; };
 		5BF35AF218C4B2EC00A02D22 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF35AF118C4B2EC00A02D22 /* UIKit.framework */; };
@@ -34,6 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5BE7DAC118C4EA13002797F9 /* TouchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchView.h; sourceTree = "<group>"; };
+		5BE7DAC218C4EA13002797F9 /* TouchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchView.m; sourceTree = "<group>"; };
+		5BE7DAC718C4EB16002797F9 /* TouchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchViewController.h; sourceTree = "<group>"; };
+		5BE7DAC818C4EB16002797F9 /* TouchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchViewController.m; sourceTree = "<group>"; };
 		5BF35AEA18C4B2EC00A02D22 /* EventHandlingTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventHandlingTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BF35AED18C4B2EC00A02D22 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5BF35AEF18C4B2EC00A02D22 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -158,6 +164,10 @@
 			children = (
 				5BF35B2018C4B73F00A02D22 /* GestureViewController.h */,
 				5BF35B2118C4B73F00A02D22 /* GestureViewController.m */,
+				5BE7DAC118C4EA13002797F9 /* TouchView.h */,
+				5BE7DAC218C4EA13002797F9 /* TouchView.m */,
+				5BE7DAC718C4EB16002797F9 /* TouchViewController.h */,
+				5BE7DAC818C4EB16002797F9 /* TouchViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -257,6 +267,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BE7DAC918C4EB16002797F9 /* TouchViewController.m in Sources */,
+				5BE7DAC318C4EA13002797F9 /* TouchView.m in Sources */,
 				5BF35B2218C4B73F00A02D22 /* GestureViewController.m in Sources */,
 				5BF35AFE18C4B2EC00A02D22 /* AppDelegate.m in Sources */,
 				5BF35AFA18C4B2EC00A02D22 /* main.m in Sources */,
@@ -461,6 +473,7 @@
 				5BF35B1818C4B2EC00A02D22 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5BF35B1918C4B2EC00A02D22 /* Build configuration list for PBXNativeTarget "EventHandlingTestTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +482,7 @@
 				5BF35B1B18C4B2EC00A02D22 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

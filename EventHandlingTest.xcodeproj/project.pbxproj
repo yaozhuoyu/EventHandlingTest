@@ -19,6 +19,8 @@
 		5BF35B0918C4B2EC00A02D22 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF35AF118C4B2EC00A02D22 /* UIKit.framework */; };
 		5BF35B1118C4B2EC00A02D22 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5BF35B0F18C4B2EC00A02D22 /* InfoPlist.strings */; };
 		5BF35B1318C4B2EC00A02D22 /* EventHandlingTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF35B1218C4B2EC00A02D22 /* EventHandlingTestTests.m */; };
+		5BF35B1E18C4B6A900A02D22 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF35B1D18C4B6A900A02D22 /* RootViewController.m */; };
+		5BF35B2218C4B73F00A02D22 /* GestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF35B2118C4B73F00A02D22 /* GestureViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,10 @@
 		5BF35B0E18C4B2EC00A02D22 /* EventHandlingTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EventHandlingTestTests-Info.plist"; sourceTree = "<group>"; };
 		5BF35B1018C4B2EC00A02D22 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5BF35B1218C4B2EC00A02D22 /* EventHandlingTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventHandlingTestTests.m; sourceTree = "<group>"; };
+		5BF35B1C18C4B6A900A02D22 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		5BF35B1D18C4B6A900A02D22 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		5BF35B2018C4B73F00A02D22 /* GestureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureViewController.h; sourceTree = "<group>"; };
+		5BF35B2118C4B73F00A02D22 /* GestureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,10 +113,13 @@
 		5BF35AF318C4B2EC00A02D22 /* EventHandlingTest */ = {
 			isa = PBXGroup;
 			children = (
+				5BF35B1F18C4B72800A02D22 /* ViewControllers */,
 				5BF35AFC18C4B2EC00A02D22 /* AppDelegate.h */,
 				5BF35AFD18C4B2EC00A02D22 /* AppDelegate.m */,
 				5BF35AFF18C4B2EC00A02D22 /* Images.xcassets */,
 				5BF35AF418C4B2EC00A02D22 /* Supporting Files */,
+				5BF35B1C18C4B6A900A02D22 /* RootViewController.h */,
+				5BF35B1D18C4B6A900A02D22 /* RootViewController.m */,
 			);
 			path = EventHandlingTest;
 			sourceTree = "<group>";
@@ -142,6 +151,15 @@
 				5BF35B0F18C4B2EC00A02D22 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5BF35B1F18C4B72800A02D22 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5BF35B2018C4B73F00A02D22 /* GestureViewController.h */,
+				5BF35B2118C4B73F00A02D22 /* GestureViewController.m */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,8 +257,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BF35B2218C4B73F00A02D22 /* GestureViewController.m in Sources */,
 				5BF35AFE18C4B2EC00A02D22 /* AppDelegate.m in Sources */,
 				5BF35AFA18C4B2EC00A02D22 /* main.m in Sources */,
+				5BF35B1E18C4B6A900A02D22 /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

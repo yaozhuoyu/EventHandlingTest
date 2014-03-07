@@ -42,13 +42,52 @@
     
     //[self testBtnFrameBigTouchView];
     
-    [self testBtnAndClearView];
+    //[self testBtnAndClearView];
+    
+    //测试事件传递过程
+    [self testEventDelivery];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+//viewcontroller event
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    NSLog(@"************** %@ touches Began", self);
+}
+
+- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event{
+    NSLog(@"************** %@ touches Moved", self);
+}
+
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event{
+    NSLog(@"************** %@ touches Ended", self);
+}
+
+- (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event{
+    NSLog(@"************** %@ touches Cancelled", self);
+}
+
+
+- (void)testEventDelivery{
+    //将一个btn放在touchview，当点击btn的时候，touchview是不会响应的，因为btn把事件截获了，猜测btn的touchevent事件没有调用super
+    
+    UIButton *actionbigBtn = [UIButton buttonWithType:UIButtonTypeSystem];
+    //actionbigBtn.frame = CGRectMake(50.0f, 250.0f, 100.0f, 30.0f);
+    actionbigBtn.frame = CGRectMake(20.0f, 50.0f, 100.0f, 50.0f);
+    [touchView_ addSubview:actionbigBtn];
+    [actionbigBtn setTitle:@"event del" forState:UIControlStateNormal];
+    [actionbigBtn addTarget:self action:@selector(testEventDel:) forControlEvents:UIControlEventTouchUpInside];
+    actionbigBtn.backgroundColor = [UIColor colorWithWhite:0.3 alpha:1];
+}
+
+- (void)testEventDel:(UIButton *)btn{
+    NSLog(@"test event delivery");
 }
 
 - (void)testHit:(UIButton *)btn{

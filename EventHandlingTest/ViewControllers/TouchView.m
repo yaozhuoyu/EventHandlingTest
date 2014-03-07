@@ -26,21 +26,25 @@
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
+    [super touchesBegan:touches withEvent:event];
     //NSLog(@"==== touch began event %@ ***** %@", event, touches);
     NSLog(@"==== touch began event");
 }
 
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event{
+    [super touchesMoved:touches withEvent:event];
     //NSLog(@"==== touch moved event %@ ***** %@", event, touches);
     NSLog(@"==== touch moved event");
 }
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event{
+    [super touchesEnded:touches withEvent:event];
     //NSLog(@"==== touch ended event %@ ***** %@", event, touches);
     NSLog(@"==== touch ended event");
 }
 
 - (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event{
+    [super touchesCancelled:touches withEvent:event];
     //NSLog(@"==== touch cancelled event %@ ***** %@", event, touches);
     NSLog(@"==== touch cancelled event");
 }

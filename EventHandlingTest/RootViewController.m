@@ -9,6 +9,7 @@
 #import "RootViewController.h"
 #import "GestureViewController.h"
 #import "TouchViewController.h"
+#import "ButtonActionForOutSideViewController.h"
 
 @interface RootViewController ()
 
@@ -41,6 +42,12 @@
     [gestureBtn setTitle:@"gotoTouch" forState:UIControlStateNormal];
     [gestureBtn addTarget:self action:@selector(gotoTouch) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:gestureBtn];
+    
+    gestureBtn = [UIButton buttonWithType:UIButtonTypeSystem];
+    gestureBtn.frame = CGRectMake(100.0f, 200.0f, 100.0f, 30.0f);
+    [gestureBtn setTitle:@"gotobtnOutSide" forState:UIControlStateNormal];
+    [gestureBtn addTarget:self action:@selector(gotobtnOutSide) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:gestureBtn];
 }
 
 - (void)didReceiveMemoryWarning
@@ -57,6 +64,11 @@
 - (void)gotoTouch{
     TouchViewController *gestVC = [[TouchViewController alloc] init];
     [self.navigationController pushViewController:gestVC animated:YES];
+}
+
+- (void)gotobtnOutSide{
+    ButtonActionForOutSideViewController *vc = [[ButtonActionForOutSideViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end

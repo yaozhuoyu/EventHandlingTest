@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B02BAC118CC0B5F00149835 /* ButtonActionForOutSideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B02BAC018CC0B5F00149835 /* ButtonActionForOutSideViewController.m */; };
 		5BE7DAC318C4EA13002797F9 /* TouchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BE7DAC218C4EA13002797F9 /* TouchView.m */; };
 		5BE7DAC918C4EB16002797F9 /* TouchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BE7DAC818C4EB16002797F9 /* TouchViewController.m */; };
 		5BF35AEE18C4B2EC00A02D22 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF35AED18C4B2EC00A02D22 /* Foundation.framework */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5B02BABF18CC0B5F00149835 /* ButtonActionForOutSideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonActionForOutSideViewController.h; sourceTree = "<group>"; };
+		5B02BAC018CC0B5F00149835 /* ButtonActionForOutSideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonActionForOutSideViewController.m; sourceTree = "<group>"; };
 		5BE7DAC118C4EA13002797F9 /* TouchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchView.h; sourceTree = "<group>"; };
 		5BE7DAC218C4EA13002797F9 /* TouchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchView.m; sourceTree = "<group>"; };
 		5BE7DAC718C4EB16002797F9 /* TouchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchViewController.h; sourceTree = "<group>"; };
@@ -168,6 +171,8 @@
 				5BE7DAC218C4EA13002797F9 /* TouchView.m */,
 				5BE7DAC718C4EB16002797F9 /* TouchViewController.h */,
 				5BE7DAC818C4EB16002797F9 /* TouchViewController.m */,
+				5B02BABF18CC0B5F00149835 /* ButtonActionForOutSideViewController.h */,
+				5B02BAC018CC0B5F00149835 /* ButtonActionForOutSideViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -271,6 +276,7 @@
 				5BE7DAC318C4EA13002797F9 /* TouchView.m in Sources */,
 				5BF35B2218C4B73F00A02D22 /* GestureViewController.m in Sources */,
 				5BF35AFE18C4B2EC00A02D22 /* AppDelegate.m in Sources */,
+				5B02BAC118CC0B5F00149835 /* ButtonActionForOutSideViewController.m in Sources */,
 				5BF35AFA18C4B2EC00A02D22 /* main.m in Sources */,
 				5BF35B1E18C4B6A900A02D22 /* RootViewController.m in Sources */,
 			);
